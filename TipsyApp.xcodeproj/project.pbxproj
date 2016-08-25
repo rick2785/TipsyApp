@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		20BC688A1D62211600FEEF4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC68891D62211600FEEF4C /* AppDelegate.swift */; };
-		20BC688C1D62211600FEEF4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC688B1D62211600FEEF4C /* ViewController.swift */; };
+		20BC688C1D62211600FEEF4C /* TipsyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC688B1D62211600FEEF4C /* TipsyVC.swift */; };
 		20BC688F1D62211600FEEF4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BC688D1D62211600FEEF4C /* Main.storyboard */; };
 		20BC68911D62211700FEEF4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BC68901D62211700FEEF4C /* Assets.xcassets */; };
 		20BC68941D62211700FEEF4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BC68921D62211700FEEF4C /* LaunchScreen.storyboard */; };
+		20BC689F1D624C4900FEEF4C /* TipCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC689E1D624C4900FEEF4C /* TipCalc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		20BC68861D62211600FEEF4C /* TipsyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipsyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BC68891D62211600FEEF4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20BC688B1D62211600FEEF4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20BC688B1D62211600FEEF4C /* TipsyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyVC.swift; sourceTree = "<group>"; };
 		20BC688E1D62211600FEEF4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20BC68901D62211700FEEF4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20BC68931D62211700FEEF4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20BC68951D62211700FEEF4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20BC689E1D624C4900FEEF4C /* TipCalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		20BC68881D62211600FEEF4C /* TipsyApp */ = {
 			isa = PBXGroup;
 			children = (
+				20BC689D1D624BF400FEEF4C /* Controller */,
+				20BC689C1D624BE800FEEF4C /* View */,
+				20BC689B1D624BD200FEEF4C /* Model */,
 				20BC68891D62211600FEEF4C /* AppDelegate.swift */,
-				20BC688B1D62211600FEEF4C /* ViewController.swift */,
 				20BC688D1D62211600FEEF4C /* Main.storyboard */,
 				20BC68901D62211700FEEF4C /* Assets.xcassets */,
 				20BC68921D62211700FEEF4C /* LaunchScreen.storyboard */,
 				20BC68951D62211700FEEF4C /* Info.plist */,
 			);
 			path = TipsyApp;
+			sourceTree = "<group>";
+		};
+		20BC689B1D624BD200FEEF4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20BC689E1D624C4900FEEF4C /* TipCalc.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		20BC689C1D624BE800FEEF4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		20BC689D1D624BF400FEEF4C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20BC688B1D62211600FEEF4C /* TipsyVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20BC688C1D62211600FEEF4C /* ViewController.swift in Sources */,
+				20BC688C1D62211600FEEF4C /* TipsyVC.swift in Sources */,
+				20BC689F1D624C4900FEEF4C /* TipCalc.swift in Sources */,
 				20BC688A1D62211600FEEF4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
